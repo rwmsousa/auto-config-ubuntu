@@ -4,12 +4,9 @@ all: permission setup
 
 permission:
     @chmod +x setup_machine.sh
-    @echo "Permissões configuradas."
+    @echo "Permissions configured."
 
 setup: permission
-    @echo "Iniciando configuração..."
+    @echo "Starting configuration..."
     @sudo ./setup_machine.sh
-    @echo "Configuração concluída com sucesso!"
-
-
-# NO TERMINAL, DIGITE APENAS "make" PARA EXECUTAR O SCRIPT
+    @echo "Configuration completed successfully!"
