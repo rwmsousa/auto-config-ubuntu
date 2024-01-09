@@ -1,12 +1,5 @@
-.PHONY: all
-
-all: permission setup
-
-permission:
-    @chmod +x setup_machine.sh
-    @echo "Permissions configured."
-
-setup: permission
-    @echo "Starting configuration..."
-    @sudo ./setup_machine.sh
-    @echo "Configuration completed successfully!"
+setup:
+    @chmod +x ./1.install_essentials.sh
+    @chmod +x ./2.install_applications.sh
+    @sh ./1.install_essentials.sh
+    @sh ./2.install_applications.sh
