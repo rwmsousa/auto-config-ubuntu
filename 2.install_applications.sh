@@ -81,3 +81,9 @@ pkill Hyper && hyper
 
 # Set the default font for the terminal to Fira Code
 gsettings set org.gnome.desktop.interface monospace-font-name "Fira Code Regular 12"
+
+# Clean up unnecessary packages after installation
+sudo apt autoremove -y
+sudo apt clean
+
+echo "Configuration completed successfully!"

@@ -1,6 +1,11 @@
 #!/bin/bash
 
+# Add execution permissions to the scripts
+chmod +x ./1.install_essentials.sh
+chmod +x ./2.install_applications.sh
+
 # Add user to the docker group to avoid the need for sudo
+sudo groupadd docker
 sudo usermod -aG docker $USER
 
 # Add superadmin privileges to the user without restrictions
