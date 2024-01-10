@@ -1,13 +1,6 @@
-# Automated Setup Script
+# Automated Setup Script for Ubuntu
 
-This repository contains a script for automating the setup of your development environment. It covers the installation of essential tools, configuration settings, and application setups. The script is designed to be executed using the `make` command for easy and consistent setup across systems.
-
-## Prerequisites
-
-Before running the script, ensure that you have the following prerequisites installed:
-
-- [Git](https://git-scm.com/)
-- [Make](https://www.gnu.org/software/make/)
+This repository contains a script for automating the setup of your development environment. It covers the installation of essential tools, configuration settings, and application setups.
 
 ## Execution
 
@@ -22,13 +15,13 @@ To execute the script, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd auto-config-ubuntu
+   cd automated-setup-script
    ```
 
-3. Run the script using the `make` command:
+3. Run the script:
 
    ```bash
-   make setup
+   sudo chmod +x setup.sh && ./setup.sh
    ```
 
    This command will initiate the automated setup process.
